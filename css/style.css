@@ -1,0 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+/* line 3, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+/* line 7, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+
+/* line 13, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/* line 18, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+ul, ol, li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+/* line 25, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+nav {
+  background-color: #0ba8d8;
+  color: white;
+  position: relative; }
+  /* line 29, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+  nav a {
+    padding: 2rem;
+    display: inline-block; }
+    /* line 32, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+    nav a:hover {
+      background-color: #076f8f; }
+
+/* line 38, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+.dark {
+  background-color: #076f8f; }
+
+/* line 42, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  width: 100%;
+  float: none;
+  position: relative; }
+
+/* line 50, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+.dropdown-menu {
+  position: absolute;
+  color: #777;
+  width: 280px;
+  display: block;
+  border: 1px solid #eee;
+  top: 100%;
+  box-shadow: 0 0px 13px rgba(0, 0, 0, 0.08);
+  height: 0;
+  display: none; }
+  /* line 61, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+  .dropdown-menu li {
+    width: 100%; }
+    /* line 63, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+    .dropdown-menu li a {
+      width: 100%;
+      transition: all 0.35s ease;
+      border: 1px solid #eee;
+      margin-top: -1px;
+      padding: 1rem; }
+      /* line 69, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+      .dropdown-menu li a:hover {
+        color: #444444;
+        background-color: #f7f7f7;
+        display: block; }
+
+/* line 78, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+.drop-btn:after {
+  content: "";
+  border-top: 5px solid white;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 7px; }
+
+/* line 89, /Users/Julia/Documents/Graphic Design/Year 3/Semester II/Web/exercise-4/scss/components/main */
+.is-open {
+  height: 206px;
+  display: block;
+  transition: all 800ms ease-in-out; }
+

@@ -1,0 +1,93 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol, li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: $main-colour;
+  color: $white;
+  position: relative;
+  a {
+    padding: $base-size * 2;
+    display: inline-block;
+    &:hover {
+      background-color: darken($main-colour, 15%);
+    }
+  }
+}
+
+.dark {
+     background-color: darken($main-colour, 15%);
+}
+
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  width: 100%;
+  float: none;
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  color: $grey777;
+  width: 280px;
+  display: block;
+  border: 1px solid $greyEEE;
+  top: 100%;
+  box-shadow: 0 0px 13px rgba(0,0,0,.08);
+  height: 0;
+  display: none;
+  
+  li {
+    width: 100%;
+     a {
+       width: 100%;
+       transition: all .35s ease;
+       border: 1px solid $greyEEE;
+       margin-top: -1px;
+       padding: 1rem;
+      &:hover {
+        color: darken($grey777, 20%);
+        background-color: lighten($greyEEE, 3.5%);
+        display: block;
+      }
+    }
+  }
+}
+
+.drop-btn:after {
+  content: "";
+  border-top: 5px solid white;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.is-open {
+  height: 206px;
+  display: block;
+  @include ease(all, 800ms, ease-in-out);
+}
